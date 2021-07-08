@@ -50,7 +50,7 @@ public class ScriptDB {
 	}
 
 	// autoIngrement e notNull 1 true 0 false;
-	public static String CriarScript(String nome, String tipo, int autoIngrement, int notNull) {
+	public String CriarScript(String nome, String tipo, int autoIngrement, int notNull) {
 		String script = "'" + nome + "'" + " " + tipo;
 		if (notNull == 1) {
 			 script = script + " NOT NULL";
